@@ -34,6 +34,8 @@ if (DEBUG)
     arduino_debug_on()
 endif()
 
+add_subdirectory(arduino-cmake)
+
 generate_arduino_firmware(Blink2
     SKETCH ${CMAKE_SOURCE_DIR}/test/Blink2
     BOARD mega
